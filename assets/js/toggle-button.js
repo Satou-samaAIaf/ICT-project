@@ -13,14 +13,14 @@ function toggleTheme() {
   }
 }
 
-window.onload = () => {
+
+document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem("theme");
   const icon = document.getElementById("themeIcon");
-
   if (saved === "dark") {
     document.body.classList.add("dark");
     icon.textContent = "☀️";
   } else {
     icon.textContent = "🌙";
   }
-};
+});
