@@ -24,7 +24,7 @@
 #purchase .quantity-btn {
   background: var(--secondary-color);
   border: none;
-  color: var(--darkersecondary-color);
+  color: white;
   font-size: 1.5rem;
   width: 40px;
   height: 40px;
