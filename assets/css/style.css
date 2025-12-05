@@ -4,11 +4,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
+  /* --main-color: fuchsia;
+  --darkermain-color: rgb(207, 0, 207);
+  --lightermain-color: #fcddff;
+  --secondary-color: #000000;
+  --darkersecondary-color: #152636;
+  --lightersecondary-color: #ffffff; */
   --main-color: rgb(0, 0, 0);
   --darkermain-color: rgb(41, 41, 41);
-  --lightermain-color: #707070;
-  --secondary-color: #676767;
+  --lightermain-color: #676767;
+  --secondary-color: #999999;
   --darkersecondary-color: #ffffff;
   --lightersecondary-color: #f1f1f1;
   --main-text-color: #000000;
@@ -28,6 +35,7 @@ a {
   text-decoration: none;
   transition: color 0.2s ease;
 }
+
 a:hover {
   color: var(--secondary-color);
 }
@@ -42,6 +50,7 @@ a:hover {
   gap: 12px;
   color: var(--darkersecondary-color);
 }
+
 .brand .logo {
   font-weight: bold;
   color: var(--secondary-color);
@@ -49,6 +58,7 @@ a:hover {
   border-radius: 6px;
   padding-top: 5px;
 }
+
 .brand img {
   width: 45px;
   height: 45px;
@@ -61,11 +71,13 @@ a:hover {
   margin-bottom: 12px;
   text-align: center;
 }
+
 .subtitle {
   font-size: 20px;
   color: var(--darkersecondary-color);
   text-align: center;
 }
+
 .title-container {
   margin-top: 10px;
   padding: 60px 20px;
@@ -73,12 +85,14 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
 .heading {
   margin-top: 20px;
   font-size: 25px;
   color: var(--darkersecondary-color);
   text-align: center;
 }
+
 .intro-content {
   margin-top: 20px;
   color: var(--darkersecondary-color);
@@ -92,7 +106,9 @@ a:hover {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 32px;
 }
-.card, .cover {
+
+.card,
+.cover {
   background: var(--darkersecondary-color);
   border-radius: 16px;
   overflow: hidden;
@@ -100,26 +116,32 @@ a:hover {
   padding-bottom: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
-.card img, .cover img {
+
+.card img,
+.cover img {
   width: 100%;
   height: 370px;
   display: block;
   object-fit: cover;
 }
+
 .card h3 {
   margin: 16px;
   font-size: 18px;
   color: var(--main-text-color);
 }
+
 .card .muted {
   margin: 0 16px;
   font-size: 14px;
   color: var(--darkersecondary-color);
 }
+
 .card .price {
   margin: 12px 16px 0;
   font-weight: bold;
@@ -218,24 +240,29 @@ table {
   margin-top: 40px;
   border-collapse: collapse;
 }
+
 th,
 td {
   padding: 12px;
   text-align: left;
   color: var(--darkersecondary-color);
 }
+
 th {
   border-bottom: 2px solid var(--lightermain-color);
 }
+
 tr:not(:last-child) {
   border-bottom: 1px solid var(--darkersecondary-color);
 }
+
 .summary {
   text-align: right;
   margin-top: 30px;
   font-size: 20px;
   line-height: 1.6;
 }
+
 button {
   background: #0071e3;
   padding: 10px 18px;
@@ -246,16 +273,20 @@ button {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 button:hover {
   background: #005bb5;
 }
+
 .delete-btn {
   background: #e63946;
   color: var(--darkersecondary-color);
 }
+
 .delete-btn:hover {
   background: #c5303c;
 }
+
 #bill-popup {
   position: fixed;
   top: 0;
@@ -268,6 +299,7 @@ button:hover {
   justify-content: center;
   z-index: 9999;
 }
+
 #bill-container {
   background: var(--lightermain-color);
   color: var(--main-color);
@@ -279,6 +311,7 @@ button:hover {
   overflow-y: auto;
   max-height: 80vh;
 }
+
 #bill-container h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -314,6 +347,7 @@ button:hover {
     transform: translateY(20px) scale(0.95);
     filter: blur(4px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -345,11 +379,9 @@ button:hover {
 }
 
 .about-section {
-  background: linear-gradient(
-    to bottom,
-    var(--main-color),
-    var(--lightermain-color) 
-  );
+  background: linear-gradient(to bottom,
+      var(--main-color),
+      var(--lightermain-color));
   height: 100%;
   width: 100vw;
   padding: 10% 20px;
@@ -435,6 +467,7 @@ button:hover {
 .linkedin:hover {
   transform: scale(1.5);
 }
+
 @media (max-width: 1000px) {
   .team-row {
     flex-wrap: wrap;
@@ -452,6 +485,7 @@ button:hover {
   color: var(--secondary-color);
   margin-bottom: 1em;
 }
+
 .highlight {
   color: #2419ff;
 }
@@ -464,12 +498,14 @@ button:hover {
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
 .toys img {
   width: 180px;
   height: 180px;
   border-radius: 20px;
   transition: transform 0.4s;
 }
+
 .toys img:hover {
   transform: scale(1.05);
 }
@@ -486,10 +522,12 @@ button:hover {
   justify-content: center;
   z-index: 9999;
 }
+
 #bill-content {
   margin-bottom: 20px;
   color: var(--secondary-color);
 }
+
 #close-bill {
   background: #e63946;
   color: var(--secondary-color);
@@ -498,6 +536,7 @@ button:hover {
   border-radius: 10px;
   cursor: pointer;
 }
+
 #bill-container {
   background: var(--main-color);
   color: var(--secondary-color);
@@ -509,14 +548,17 @@ button:hover {
   overflow-y: auto;
   max-height: 80vh;
 }
+
 .bill-table {
   width: 100%;
   border-collapse: collapse;
   color: var(--secondary-color);
 }
+
 .bill-table-row {
   border-bottom: 1px solid #333;
 }
+
 .line {
   margin: 15px 0;
   color: #0071e3;
